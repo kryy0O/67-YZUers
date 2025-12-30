@@ -1,19 +1,131 @@
-67 YZUers - Student Housing Platform 🏠🎓67 YZUers is a dedicated housing and community platform designed exclusively for students of Yuan Ze University (YZU). It simplifies the process of finding safe, affordable, and convenient accommodation near the campus (Neili, Xingren Rd, Yuandong Rd).Built with the MERN Stack (MongoDB, Express, React, Node.js).✨ Key Features🗺️ Interactive Map Search: View available rooms directly on a custom map of the YZU surrounding area.🏠 Host Dashboard: Any student or landlord can sign up and list a room for rent.📍 Smart Location Picker: Uploaders can pin the exact location of their property on the map.🔍 Advanced Filters: Filter by budget, location (e.g., Neili Station), and amenities.💬 Community Chat Board: A built-in social space for students to find roommates, sell books, or ask questions.🤖 YZU Bot: An AI-style assistant to help users find rooms based on budget and area instantly.❤️ Wishlist: Save your favorite rooms to your profile for later.🛁 Detailed Listings: View amenities (Wifi, AC, etc.), landlord contact info (Line/Phone), and deposit details.🛠️ Tech StackFrontend: React (Vite), Tailwind CSS, Lucide React (Icons)Backend: Node.js, Express.jsDatabase: MongoDB Atlas (Cloud)Authentication: JWT (JSON Web Tokens) & Bcrypt🚀 Getting StartedFollow these instructions to run the project locally on your machine.PrerequisitesNode.js installed.Git installed.1. Clone the Repositorygit clone [https://github.com/kryy0O/67-YZUers.git](https://github.com/kryy0O/67-YZUers.git)
+<<<<<<< HEAD
+# week-17-project
+room rental website for YZU students, staff and professors
+=======
+# 67 YZUers – Student Housing Platform 🏠🎓
+
+**67 YZUers** is a student-focused housing and community platform created specifically for Yuan Ze University (YZU) students. The platform helps students easily find safe, affordable, and convenient accommodation near the YZU campus areas such as Neili, Xingren Road, and Yuandong Road.
+
+The project is developed using the **MERN Stack** (MongoDB, Express, React, and Node.js).
+
+---
+
+## ✨ Main Features
+
+- **Interactive Map Search**  
+  Browse available rooms directly on a customized map around the YZU area.
+
+- **Host Dashboard**  
+  Students or landlords can register and post rental listings.
+
+- **Precise Location Pinning**  
+  Hosts can mark the exact location of their property on the map.
+
+- **Advanced Filtering**  
+  Search by budget, nearby landmarks (e.g., Neili Station), and amenities.
+
+- **Community Chat Board**  
+  A shared space for students to look for roommates, sell items, or ask questions.
+
+- **YZU Bot Assistant**  
+  An AI-style helper that recommends rooms based on user preferences.
+
+- **Wishlist Function**  
+  Save favorite listings for future reference.
+
+- **Detailed Room Information**  
+  Includes amenities (WiFi, air conditioning, etc.), landlord contact details, and deposit information.
+
+---
+
+## 🛠️ Technology Stack
+
+**Frontend**
+- React (Vite)
+- Tailwind CSS
+- Lucide React Icons
+
+**Backend**
+- Node.js
+- Express.js
+
+**Database**
+- MongoDB Atlas (Cloud)
+
+**Authentication**
+- JWT (JSON Web Tokens)
+- Bcrypt
+
+---
+
+## 🚀 Running the Project Locally
+
+### Prerequisites
+- Node.js installed  
+- Git installed  
+
+### 1. Clone the Repository
+bash
+git clone https://github.com/kryy0O/67-YZUers.git
 cd yzu-housing
-2. Install DependenciesYou need to install packages for both the Client (Frontend) and Server (Backend).Server:cd server
+
+### 2. Install Dependencies
+
+**Backend**
+bash
+cd server
 npm install
-Client:cd ../client
+
+**Frontend**
+bash
+cd ../client
 npm install
-3. Run the ApplicationYou need to run two terminals simultaneously.Terminal 1 (Backend):cd server
+
+### 3. Start the Application
+
+Run two terminals at the same time.
+
+**Terminal 1 – Backend**
+bash
+cd server
 node index.js
-Wait for the message: ✅ MongoDB Connected to RyanBaseTerminal 2 (Frontend):cd client
+Wait until you see:  
+✅ MongoDB Connected
+
+**Terminal 2 – Frontend**
+bash
+cd client
 npm run dev
-Open your browser and navigate to: http://localhost:5173📂 Project Structureyzu-housing/
-├── client/              # React Frontend
-│   ├── public/          # Static images (map.png, logo.png, bg.jpg)
-│   └── src/             # React Source Code (App.jsx)
-├── server/              # Node.js Backend
-│   ├── models/          # Database Schemas (Room.js, User.js, Post.js)
-│   └── index.js         # Main Server Logic
-└── README.md            # You are here
-🛡️ Admin & Host AccessStandard User: Can browse rooms, chat, and save bookmarks.Host/Admin: Can upload new rooms and delete existing ones.Note: In the current version, all registered users are granted Host capabilities to foster a peer-to-peer community.📸 Screenshots(Add screenshots of your Home View, Map View, and Admin Panel here)Developed for the 67th YZUers Community.
+
+Then open your browser and go to:  
+http://localhost:5173
+
+---
+
+## 📂 Project Structure
+
+yzu-housing/
+├── client/              # React frontend
+│   ├── public/          # Static assets (images, logos, backgrounds)
+│   └── src/             # Main React source files
+├── server/              # Node.js backend
+│   ├── models/          # Database schemas
+│   └── index.js         # Server entry point
+└── README.md
+
+---
+
+## 🛡️ User Roles
+
+- **Regular Users**  
+  Can browse listings, use the chat board, and save rooms.
+
+- **Hosts / Admins**  
+  Can post new rental listings and remove existing ones.
+
+Note: In the current version, all registered users have host permissions to encourage student-to-student sharing.
+
+---
+
+Developed for the **67th YZUers Community**.
+>>>>>>> b2aa0f5 (Emergency Fix)
